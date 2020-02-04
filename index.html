@@ -1,10 +1,47 @@
+<!DOCTYPE html>
 <html>
-<head>
-<title> First Git Repo </title>
 
-<body>
-<h1> First Git Repo!</h1>
-</body>
+<head>
+
+   <title> Color Personality Quiz </title>
+   <meta charset="utf-8">
 
 </head>
+
+<body>
+
+<h1>Color Personality Quiz</h1>
+
+<button onclick="firstFunction(0)">Red</button>
+<button onclick="firstFunction(1)">Blue</button>
+<button onclick="firstFunction(2)">Yellow</button>
+
+<div id="someContent">
+
+</div>
+
+<script>
+function firstFunction(quizVal) {
+   value = quizVal;
+
+   switch(value) {
+      case 0:
+         console.log('Red');
+         document.getElementById('someContent').innerHTML = '<h3>Energy, Passion, Courage, Attention</h3>';
+         break;
+      case 1:
+         console.log('Blue');
+            document.getElementById('someContent').innerHTML = '<h3>Responsibility, Honestly, Loyalty, Loneliness</h3>';
+         break;
+      case 2:
+         console.log('Yellow');
+            document.getElementById('someContent').innerHTML = '<h3>Oppotunity, Happiness, Positivity, Enthusiasm</h3>';
+         break;
+   }
+}
+
+</script>
+
+</body>
+
 </html>
