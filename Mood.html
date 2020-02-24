@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+   <title> First Quiz </title>
+   <meta charset="utf-8">
+
+</head>
+
+<style>
+
+body {background-color:blue;}
+
+</style>
+
+<body>
+
+<h1>Change Your Mood</h1>
+
+<button id="moodButton" onclick="changeMood()" value="0">Change my mood</button>
+<div id="mood">swimming in the ocean</div>
+<script>
+
+
+function changeMood(){
+	button = document.getElementById("moodButton")
+	if (button.value == '0') {
+		text ="Feeling like forest";
+		document.getElementById('mood').innerHTML = text
+		document.body.style.backgroundColor = "green";
+		button.value = '1';
+	}
+	else {
+		text = "Running on the beach";
+		document.getElementById('mood').innerHTML = text;
+				document.body.style.backgroundColor = "orange";
+		button.value = '0';
+	}
+}
+
+
+
+</script>
+</body>
+
+</html>
